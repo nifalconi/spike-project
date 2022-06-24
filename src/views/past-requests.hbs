@@ -1,0 +1,24 @@
+<h1>
+  List of Past Requests
+</h1>
+
+<table>
+<thead>
+  <tr>
+    <th>Address 1</th>
+    <th>Address 2</th>
+    <th>Distance</th>
+    <th>Date</th>
+  </tr>
+</thead>
+{{#each pastRequests}}
+<tr>
+  <td>|| {{address1}} |</td>
+  <td>| {{address2}} |</td>
+  <td>| {{distance}} km |</td>
+  <td>| {{createdAt}} ||</td>
+</tr>
+{{/each}}
+</table>
+<br>
+<button onclick="window.location.href='/'">Home</button>

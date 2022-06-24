@@ -1,0 +1,17 @@
+<input type='text' id='address1' placeholder='Address 1' />
+<input type='text' id='address2' placeholder='Address 2' />
+<button
+  onclick="window.location.href='/distances/calculate-addresses-distance?address1=' + document.getElementById('address1').value + '&address2=' + document.getElementById('address2').value">
+  Calculate Distance
+</button>
+<br />
+<br />
+<div > Address1 {{ address1 }}</div>
+<div > Address2 {{ address2 }}</div>
+<div > Distance {{ distance }} km</div>
+<br />
+<br />
+<button onclick="window.location.href='/'">
+  Home
+</button>
+<br />
